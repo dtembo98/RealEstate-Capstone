@@ -1,8 +1,12 @@
 // migrating the appropriate contracts
-var SquareVerifier = artifacts.require("./SquareVerifier.sol");
+var Verifier = artifacts.require("./verifier.sol");
 var SolnSquareVerifier = artifacts.require("./SolnSquareVerifier.sol");
 
-module.exports = function(deployer) {
-  deployer.deploy(SquareVerifier);
-  deployer.deploy(SolnSquareVerifier);
+// Contract MetaData
+var tokenName = "Enigma_Token";
+var tokenSymbol = "ENT";
+
+module.exports = function (deployer) {
+  deployer.deploy(Verifier);
+  deployer.deploy(SolnSquareVerifier, Verifier.address, tokenName, tokenSymbol);
 };
