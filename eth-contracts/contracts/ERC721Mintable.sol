@@ -30,6 +30,11 @@ contract Ownable {
         _transferOwnership(newOwner);
     }
 
+    // public getter function
+    function getOwner() public view returns (address) {
+        return _owner;
+    }
+
     // Define an internal function to transfer ownership
     function _transferOwnership(address newOwner) internal {
         require(newOwner != address(0));
@@ -617,11 +622,6 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 //  TODO's: Create CustomERC721Token contract that inherits from the ERC721Metadata contract. You can name this contract as you please
 //  1) Pass in appropriate values for the inherited ERC721Metadata contract
 //      - make the base token uri: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/
-//  2) create a public mint() that does the following:
-//      -can only be executed by the contract owner
-//      -takes in a 'to' address, tokenId, and tokenURI as parameters
-//      -returns a true boolean upon completion of the function
-//      -calls the superclass mint and setTokenURI functions
 
 contract CustomERC721Token is ERC721Metadata {
     string private _baseTokenURI =
@@ -631,4 +631,16 @@ contract CustomERC721Token is ERC721Metadata {
         public
         ERC721Metadata(name, symbol, _baseTokenURI)
     {}
+
+    //  2) create a public mint() that does the following:
+    //      -can only be executed by the contract owner
+    //      -takes in a 'to' address, tokenId, and tokenURI as parameters
+    //      -returns a true boolean upon completion of the function
+    //      -calls the superclass mint and setTokenURI functions
+
+    function mint(address to, uint256 tokenId) public onlyOwner returns (bool) {
+        _mint(to, tokenId);
+        _setTokenURI(tokenId);
+        return true;
+    }
 }
