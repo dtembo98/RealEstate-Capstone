@@ -23,10 +23,10 @@ contract("SquareVerifier", function (accounts) {
   });
   // Test verification with incorrect proof
   it("should not verify an incorrect proof", async function () {
-    let isVerified = await this.contract.verifyTx(
-      verifierProof.proof.a,
-      verifierProof.proof.b,
+    let isVerified = await this.contract.verifyTx.call(
       verifierProof.proof.c,
+      verifierProof.proof.b,
+      verifierProof.proof.a,
       verifierProof.inputs,
       { from: account_one }
     );
