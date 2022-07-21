@@ -42,6 +42,14 @@ TestSquareVerifier
 ### Verifier Rinkeby Address
  ```0x99D83FB7717E0E3115dc6ad7d48e1F42237F66b6```
  
+### OpenSea MarketPlace Storefront link's 
+
+1. https://testnets.opensea.io/assets/rinkeby/0x520C5D8D0126C3E8B65b90CdB0E002d67608b570/1
+2. https://testnets.opensea.io/assets/rinkeby/0x520C5D8D0126C3E8B65b90CdB0E002d67608b570/2
+3. https://testnets.opensea.io/assets/rinkeby/0x520C5D8D0126C3E8B65b90CdB0E002d67608b570/3
+4. https://testnets.opensea.io/assets/rinkeby/0x520C5D8D0126C3E8B65b90CdB0E002d67608b570/4
+5. https://testnets.opensea.io/assets/rinkeby/0x520C5D8D0126C3E8B65b90CdB0E002d67608b570/5
+ 
 ### SolnSquareVerifier ABI Contracts
 
 ```
