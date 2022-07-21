@@ -12,7 +12,7 @@ To install, download or clone the repo, then:
 
 `truffle compile`
 
-## Develop Client
+## Running Tests
 This project contains three test files namely:
 - TestERC721Mintable
 - TestSolnSquareVerifier
