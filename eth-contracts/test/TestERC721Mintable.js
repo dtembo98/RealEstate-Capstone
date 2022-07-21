@@ -35,6 +35,7 @@ contract("TestERC721Mintable", (accounts) => {
 
     it("should return total supply", async function () {
       let amount = await this.contract.totalSupply();
+
       console.log("amount ", amount);
       assert.equal(
         parseInt(amount),

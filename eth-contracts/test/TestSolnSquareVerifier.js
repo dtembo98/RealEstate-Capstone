@@ -5,10 +5,6 @@ var verifierProof = require("../../zokrates/code/square/proof.json");
 contract("SolnSquareVerifier", (accounts) => {
   const account_one = accounts[0];
   const account_two = accounts[1];
-  const account_three = accounts[2];
-
-  const BASE_TOKEN_URI =
-    "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/";
 
   const TOKEN_NAME = "Enigma Token";
   const TOKEN_SYMBOL = "ENT";
