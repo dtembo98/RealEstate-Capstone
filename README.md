@@ -16,7 +16,8 @@ This project contains three test files namely:
 - TestSquareVerifier
 
 To run truffle tests separately:
-'cd eth-contracts'
+
+`cd eth-contracts`
 
 TestERC721Mintable
 `truffle test ./test/TestERC721Mintable.js`
