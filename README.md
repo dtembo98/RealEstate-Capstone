@@ -20,11 +20,11 @@ This project contains three test files namely:
 
 `cd eth-contracts`
 
-To run truffle all tests :
+To run  all tests :
 
 `truffle test ./test/TestERC721Mintable.js`
 
-To run truffle tests separately:
+To run tests separately:
 
 TestERC721Mintable
 `truffle test ./test/TestERC721Mintable.js`
@@ -35,7 +35,13 @@ TestSolnSquareVerifier
 TestSquareVerifier
 `truffle test ./test/TestSquareVerifier.js`
 
-`cd eth-contracts`
+## Deployed Contracts
+### SolnSquareVerifier
+ ``` 0x520C5D8D0126C3E8B65b90CdB0E002d67608b570 ```
+ 
+### Verifier
+ ```0x99D83FB7717E0E3115dc6ad7d48e1F42237F66b6```
+
 
 
 # Project Resources
