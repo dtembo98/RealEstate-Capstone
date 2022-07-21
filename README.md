@@ -1,6 +1,32 @@
 # Udacity Blockchain Capstone
+This is a decentralized house listing service.
 
-The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
+## Install
+
+This repository contains Smart Contract code in Solidity (using Truffle), tests (also using Truffle).
+To install, download or clone the repo, then:
+
+`npm install`
+`truffle compile`
+
+## Develop Client
+This project contains three test files namely:
+- TestERC721Mintable
+- TestSolnSquareVerifier
+- TestSquareVerifier
+
+To run truffle tests separately:
+'cd eth-contracts'
+
+TestERC721Mintable
+`truffle test ./test/TestERC721Mintable.js`
+
+TestSolnSquareVerifier
+`truffle test ./test/TestSolnSquareVerifier.js`
+
+TestSquareVerifier
+`truffle test ./test/TestSquareVerifier.js`
+
 
 # Project Resources
 
