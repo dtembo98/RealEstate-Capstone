@@ -49,7 +49,7 @@ contract SolnSquareVerifier is CustomERC721Token {
             abi.encodePacked(input[0], input[1])
         );
         require(
-            uniqueSolutions[uniqueSolutionKey].isCorrect,
+            uniqueSolutions[uniqueSolutionKey].isCorrect == false,
             "Solution already exists"
         );
 
@@ -72,7 +72,7 @@ contract SolnSquareVerifier is CustomERC721Token {
     // TODO Create a function to mint new NFT only after the solution has been verified
     //  - make sure the solution is unique (has not been used before)
     //  - make sure you handle metadata as well as tokenSuplly
-    function mint(
+    function mintNFT(
         uint256 a,
         uint256 b,
         address to

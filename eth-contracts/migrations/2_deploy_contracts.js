@@ -6,7 +6,12 @@ var SolnSquareVerifier = artifacts.require("./SolnSquareVerifier.sol");
 var tokenName = "Enigma_Token";
 var tokenSymbol = "ENT";
 
-module.exports = function (deployer) {
-  deployer.deploy(Verifier);
-  deployer.deploy(SolnSquareVerifier, Verifier.address, tokenName, tokenSymbol);
+module.exports = async function (deployer) {
+  await deployer.deploy(Verifier);
+  await deployer.deploy(
+    SolnSquareVerifier,
+    Verifier.address,
+    tokenName,
+    tokenSymbol
+  );
 };
