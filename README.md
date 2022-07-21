@@ -4,6 +4,7 @@ This is a decentralized house listing service.
 ## Install
 
 This repository contains Smart Contract code in Solidity (using Truffle), tests (also using Truffle).
+
 To install, download or clone the repo, then:
 
 `npm install`
