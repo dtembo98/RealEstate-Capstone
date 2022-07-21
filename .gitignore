@@ -1,2 +1,3 @@
 eth-contracts/build/contracts
 node_modules
+eth-contracts/.env

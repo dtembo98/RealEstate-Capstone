@@ -9,6 +9,7 @@ contract("SquareVerifier", function (accounts) {
   beforeEach(async function () {
     this.contract = await SquareVerifier.new({ from: account_one });
   });
+
   // Test verification with correct proof
   it("should verify a correct proof", async function () {
     let result = await this.contract.verifyTx(
@@ -18,6 +19,7 @@ contract("SquareVerifier", function (accounts) {
       verifierProof.inputs,
       { from: account_one }
     );
+
     let eventName = result.logs[0].event;
     assert.equal(eventName, "Verified", "Verification failed");
   });
